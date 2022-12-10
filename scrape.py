@@ -12,14 +12,12 @@ This program is mainly just a resource for me to download all of the slides/work
 
 from bs4 import BeautifulSoup as bs
 import requests as rq
-from urllib.request import (
-    urlopen, urlparse, urlretrieve) 
 import os 
 import sys 
 import wget 
 
 # Retrieve Command-Line Arguments 
-print(f"The passed in arguments are: {sys.argv}. There are a total of {len(sys.argv)} arguments") 
+# print(f"The passed in arguments are: {sys.argv}. There are a total of {len(sys.argv)} arguments") 
 
 sysArgs = sys.argv[1:]
     
@@ -37,7 +35,6 @@ def pretty_folders():
     for each in current_directory: 
         if os.path.isdir(each): 
             print(each) 
-
 
 def get_all_links(soup):
     ''' 
@@ -67,6 +64,7 @@ def download_links(url, directory=(f"{os.getcwd()}/downloads")):
     else:
         print("Please try again.") 
         download_links(url)
+
 print(os.getcwd())
 pretty_folders()
 for url in sysArgs: 
