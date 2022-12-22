@@ -10,5 +10,5 @@ python main.py <url> <page_id>
 ```
 
 ## Options 
--- directory: Change output directory (default = ./directory) 
+-- directory: Change output directory (default = "./downloads/") 
 
