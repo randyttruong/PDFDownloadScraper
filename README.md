@@ -1,11 +1,14 @@
 # PDFDownloadScraper 
 
-A small, lightweight Python HTML scraper script that automatically downloads all of the PDFs you need to become the best self-taught programmer you can be! 
+A small, lightweight Python HTML scraper script that automatically downloads all of the PDFs you will ever need. Because mouses are overrated.  
 
 ![](https://github.com/randyttruong/PDFDownloadScraper/blob/main/videos/demo.gif)
 
-## Quickstart Guide: 
+# Quickstart Guide: 
 ```
 python main.py <url> <page_id>  
 ```
+
+## Options 
+-- directory: Change output directory (default = ./directory) 
 
